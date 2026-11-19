@@ -1,0 +1,6 @@
+model=configured units=86 run=F:\#Project\Agenthon_T1_CodingTask\track1-agent\benchmarks\runs\full-v9-450
+0 t1-EXAMPLE-bs-greeks-pde                     t=367.0s req=2 net=0 pass=6 fail=8 test_no_nulls;test_put_call_parity;test_delta_bounds[call--1e-05-1.00001];test_d
+0 t1-13f-amendment-aware-crowding              t=452.3s req=4 net=0 pass=4 fail=47 test_reference_match_resolution_and_holdings_outputs;test_reference_match_manage
+0 t1-alpha-hedge-strategy                      t=269.1s req=4 net=0 pass=0 fail=1 test_verification
+0 t1-american-option-fd-new                    t=416.1s req=10 net=0 pass=20 fail=34 test_exercise_boundary_png_exists;test_all_positive;test_european_put_range;test
+0 t1-asian-option-levy-curran                  t=338.6s req=8 net=0 pass=21 fail=4 test_n_prices;test_all_prices_positive;test_geo_less_than_arith;test_geo_less_th

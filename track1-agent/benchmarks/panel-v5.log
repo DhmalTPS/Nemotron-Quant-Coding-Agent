@@ -1,0 +1,18 @@
+model=configured units=16 run=F:\#Project\Agenthon_T1_CodingTask\track1-agent\benchmarks\runs\panel-v5
+1 t1-historical-var-data-prep                  t=185.7s req=5 pass=12 fail=0 
+1 t1-earnings-surprise-calculator              t=96.1s req=3 pass=8 fail=0 
+1 t1-sma-crossover-spy                         t=314.1s req=4 pass=20 fail=0 
+0 t1-fx-forward-cross-rate                     t=729.9s req=15 pass=0 fail=37 test_forward_rate_mid[EUR/USD-3M-1.092616];test_forward_rate_mid[USD/JPY-3M-146.270313];te
+0 t1-var-es-estimation                         t=585.2s req=10 pass=33 fail=14 test_row_count;test_columns;test_distributions_present;test_methods_present;test_alphas_pr
+0 t1-implied-vol-approximations                t=587.6s req=11 pass=9 fail=1 test_summary_json_oracle_values
+0 t1-fft-compound-poisson                      t=245.3s req=6 pass=55 fail=8 test_fft_var[lognormal-0.99];test_fft_var[lognormal-0.995];test_fft_es[lognormal-0.95];tes
+0 t1-alpha-hedge-strategy                      t=309.0s req=5 pass=0 fail=1 test_verification
+0 t1-regime-riskparity-cvar                    t=329.4s req=7 pass=0 fail=1 test_verification
+0 t1-crypto-funding-rate-basis-carry           t=419.1s req=9 pass=55 fail=8 test_ou_parameter[half_life_periods-2.251-0.3];test_ou_parameter[half_life_days-0.75-0.1];
+1 t1-cross-sectional-momentum                  t=183.4s req=4 pass=37 fail=0 
+0 t1-swap-curve-bootstrap-ois                  t=553.0s req=13 pass=10 fail=9 test_libor_pillar_values_match_oracle;test_all_reprice_residuals_near_zero;test_swap_numer
+0 t1-credit-migration-matrix                   t=196.5s req=5 pass=103 fail=4 test_ccc_default_1y;test_ccc_5y_cumulative_pd;test_total_transitions;test_total_transition
+1 t1-EXAMPLE-bs-greeks-pde                     t=224.8s req=4 pass=14 fail=0 
+0 t1-etf-cross-asset-lead-lag                  t=300.2s req=10 pass=12 fail=12 test_solution_intermediates_have_expected_keys;test_solution_intermediates_reference_value
+0 t1-hull-white-swaption                       t=862.6s req=11 pass=40 fail=41 test_rmse_below_5bps;test_caplet_diffs_below_3bps;test_analytical_price_positive[1Yx5Y];te
+PASS@1 = 5/16 = 0.312   mean agent time 383s

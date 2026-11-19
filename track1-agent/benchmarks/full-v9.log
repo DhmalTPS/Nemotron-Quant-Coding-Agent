@@ -1,0 +1,93 @@
+model=configured units=86 run=F:\#Project\Agenthon_T1_CodingTask\track1-agent\benchmarks\runs\full-v9
+resume: 0 unit(s) already graded
+0 t1-EXAMPLE-bs-greeks-pde                     t=468.2s req=5 net=0 pass=1 fail=14 test_required_columns;test_row_count_matches_input;test_option_ids_match;test_no
+0 t1-13f-amendment-aware-crowding              t=471.2s req=7 net=0 pass=6 fail=45 test_reference_match_resolution_and_holdings_outputs;test_reference_match_manage
+0 t1-alpha-hedge-strategy                      t=233.7s req=4 net=0 pass=0 fail=1 test_verification
+0 t1-american-option-fd-new                    t=411.8s req=2 net=0 pass=20 fail=34 test_exercise_boundary_png_exists;test_all_positive;test_european_put_range;test
+1 t1-asian-option-levy-curran                  t=317.9s req=6 net=0 pass=25 fail=0 
+0 t1-barone-adesi-whaley                       t=480.0s req=5 net=0 pass=20 fail=16 test_prices_nonneg;test_american_geq_european;test_premium_nonneg;test_put_premi
+model=configured units=86 run=F:\#Project\Agenthon_T1_CodingTask\track1-agent\benchmarks\runs\full-v9
+resume: 6 unit(s) already graded
+0 t1-barrier-garch-var                         t=267.8s req=6 net=0 pass=0 fail=1 test_verification
+0 t1-binance-btc-participation-tca             t=325.7s req=9 net=0 pass=4 fail=1 test_fills_csv_schema_row_ordering_precision_and_event_links
+0 t1-bl-regime-hmm                             t=139.9s req=5 net=0 pass=0 fail=1 test_verification
+1 t1-bollinger-backtest-aapl                   t=224.8s req=5 net=0 pass=35 fail=0 
+1 t1-brinson-sector-attribution                t=171.7s req=5 net=0 pass=42 fail=0 
+1 t1-bs-greeks-pde                             t=336.0s req=6 net=0 pass=39 fail=0 
+1 t1-cir-bond-pricing                          t=407.2s req=3 net=0 pass=35 fail=0 
+0 t1-cliquet-ratchet-pricing                   t=117.8s req=4 net=0 pass=15 fail=2 test_cliquet_prices_values;test_summary_values
+0 t1-cme-hdd-option-pricing                    t=260.4s req=6 net=0 pass=49 fail=3 test_burn_expected_payoff;test_temp_delta_value;test_vega_value
+0 t1-compound-option-geske                     t=412.1s req=3 net=0 pass=6 fail=28 test_file_exists;test_structure;test_row_count;test_types;test_prices_positive;t
+0 t1-copula-equity-fitting                     t=379.4s req=12 net=0 pass=19 fail=9 test_gaussian_rho_jpm_gs;test_clayton_theta_positive_for_positive_tau;test_gumbe
+0 t1-copula-sampling-rank-correlation          t=213.6s req=6 net=0 pass=34 fail=17 test_frank_native_param;test_kendall_tau_empirical_close_to_target[clayton];test
+1 t1-corporate-action-adjustment               t=336.6s req=5 net=2 pass=7 fail=0 
+0 t1-credit-migration-matrix                   t=333.3s req=5 net=0 pass=105 fail=2 test_ccc_default_1y;test_total_transitions_matches_cohort_sizes
+1 t1-credit-spread-decomposition               t=233.7s req=5 net=0 pass=39 fail=0 
+0 t1-credit-portfolio-var-cvar                 t=438.7s req=4 net=0 pass=78 fail=52 test_file_exists[summary.json];test_file_exists[sector_risk_decomposition.csv];t
+0 t1-creditmetrics-portfolio-var               t=268.8s req=4 net=0 pass=22 fail=4 test_var_99;test_es_95;test_aaa_mean_loss;test_summary_var99
+1 t1-cross-sectional-momentum                  t=71.8s req=4 net=0 pass=37 fail=0 
+0 t1-cta-basel-capital                         t=447.4s req=7 net=0 pass=0 fail=1 test_verification
+0 t1-crypto-funding-rate-basis-carry           t=452.6s req=6 net=0 pass=49 fail=14 test_output_file_exists[funding_clean.csv];test_output_file_exists[regime_stats.
+0 t1-delta-hedging-pnl-simulation              t=186.0s req=5 net=0 pass=23 fail=4 test_hedging_pnl[1];test_hedging_pnl[5];test_hedging_pnl[10];test_hedging_pnl[22
+0 t1-dcc-garch-portfolio-var                   t=419.3s req=6 net=0 pass=24 fail=39 test_portfolio_var_csv_exists;test_backtest_results_json_exists;test_garch_uncon
+0 t1-digital-barrier-options                   t=390.9s req=4 net=0 pass=28 fail=7 test_gap_equals_bs_when_K1_eq_K2;test_knockout_leq_vanilla;test_knockout_nonnega
+0 t1-double-sort                               t=159.3s req=5 net=0 pass=1 fail=18 test_input_panel_integrity;test_net_return_matches_reference;test_corner_is_equa
+1 t1-earnings-surprise-calculator              t=70.9s req=3 net=0 pass=8 fail=0 
+0 t1-dupire-local-vol                          t=345.6s req=7 net=0 pass=64 fail=4 test_calibration_n_expiries;test_svi_a_positive;test_svi_rho_bounded;test_local_
+0 t1-etf-cross-asset-lead-lag                  t=329.0s req=13 net=0 pass=15 fail=9 test_dimensions_and_sample_split;test_solution_intermediates_reference_values;te
+0 t1-etf-overlap-redemption-pressure           t=366.1s req=9 net=0 pass=7 fail=33 test_columns;test_semantic_reference_match;test_top30_metrics_recomputed_from_re
+0 t1-event-study-earnings                      t=316.6s req=6 net=0 pass=29 fail=5 test_st_corrado_z_full_pinned;test_st_kp_rho_bar_pinned;test_st_kp_t_full_pinned
+0 t1-ewma-portfolio-risk-decomposition         t=254.9s req=5 net=0 pass=3 fail=24 test_cov_elements[ewma_cov_0_0];test_cov_elements[ewma_cov_0_1];test_cov_element
+0 t1-evt-pot-var                               t=372.1s req=5 net=0 pass=39 fail=16 test_var[historical-99];test_var[normal-99];test_var[evt-99];test_var[garch_evt-
+0 t1-fama-french-factor-model-new              t=195.1s req=4 net=0 pass=92 fail=9 test_aapl_t_stat_alpha_nw;test_msft_t_stat_alpha_nw;test_msft_p_value_alpha_nw;t
+0 t1-fft-compound-poisson                      t=305.4s req=6 net=0 pass=35 fail=28 test_fft_var[gamma-0.95];test_fft_var[gamma-0.99];test_fft_var[gamma-0.995];test
+0 t1-first-passage-time                        t=451.8s req=9 net=0 pass=11 fail=20 test_row_count;test_columns;test_probs_in_01;test_prob_decreases_with_barrier;te
+0 t1-fomc-tone-event-study                     t=434.7s req=11 net=0 pass=1 fail=19 test_event_panel_schema_and_order;test_results_json_contract;test_influence_sche
+0 t1-form4-cross-sectional-sale-pressure       t=330.1s req=4 net=0 pass=4 fail=50 test_output_file_exists[cross_sectional_rankings.csv];test_output_file_exists[pr
+0 t1-fx-carry-forward-hedge                    t=429.9s req=13 net=0 pass=13 fail=32 test_all_required_output_files_exist;test_broken_date_case;test_roll_cases_use_f
+0 t1-fx-forward-cross-rate                     t=320.4s req=10 net=0 pass=0 fail=37 test_forward_rate_mid[EUR/USD-3M-1.092616];test_forward_rate_mid[USD/JPY-3M-146.
+1 t1-historical-var-data-prep                  t=79.4s req=5 net=0 pass=12 fail=0 
+0 t1-geometric-mean-reverting-jd               t=126.2s req=4 net=0 pass=30 fail=4 test_variance_bounded_by_stationary;test_mc_var_close_to_analytical;test_jd_ou_c
+0 t1-hull-white-swaption                       t=309.4s req=14 net=0 pass=12 fail=69 test_row_count;test_columns_present;test_a_in_range;test_sigma_in_range;test_rms
+0 t1-implied-vol-approximations                t=288.5s req=15 net=0 pass=9 fail=1 test_summary_json_oracle_values
+1 t1-interest-rate-cap-floor                   t=70.2s req=5 net=0 pass=7 fail=0 
+0 t1-intraday-volume-fitting-and-execution-sch t=220.7s req=10 net=0 pass=1 fail=12 test_required_output_files_exist;test_excluded_days_matches_reference;test_model
+0 t1-ipca-latent-factors                       t=283.9s req=9 net=0 pass=0 fail=1 test_verification
+0 t1-kelly-var-sizing                          t=157.9s req=6 net=0 pass=0 fail=1 test_verification
+0 t1-lob-pc-signal                             t=101.1s req=4 net=0 pass=5 fail=26 test_field_is_correct[weighted_ofi_0_index0--2395.0088264181813];test_field_is_c
+0 t1-localvol-barrier                          t=412.2s req=6 net=0 pass=10 fail=29 test_output_exists[call_surface.csv];test_output_exists[local_vol_surface.csv];t
+0 t1-lookback-options                          t=348.0s req=12 net=0 pass=12 fail=13 test_file_exists;test_row_count;test_prices_positive;test_monotonic_in_strike;te
+0 t1-mc-greek-surface-1                        t=299.3s req=11 net=0 pass=41 fail=8 test_fd_gamma_call_within_5pct;test_eu_put_delta_fd_pw_close;test_eu_call_vega_f
+0 t1-merton-jump-diffusion                     t=385.3s req=4 net=0 pass=7 fail=21 test_n_returns;test_return_statistics;test_sigma_range;test_lambda_range;test_mu
+1 t1-momentum-backtest                         t=357.8s req=6 net=0 pass=26 fail=0 
+0 t1-mtm-xccy-basis-desk                       t=464.3s req=9 net=0 pass=26 fail=119 test_required_file_exists[basis_curve.csv];test_required_file_exists[cashflow_sc
+0 t1-multimodal-alpha-fusion-edgar-cot-gdelt   t=386.6s req=7 net=0 pass=4 fail=22 test_committee_panel_schema;test_process_diagnostics_schema;test_alpha_panel_sch
+0 t1-ohlc-realized-vol-estimators              t=406.8s req=8 net=0 pass=20 fail=13 test_row_count;test_columns;test_estimators_present;test_mean_vol_positive;test_
+0 t1-option-put-call-parity-forward-audit      t=433.5s req=3 net=0 pass=0 fail=5 test_results_json_schema_and_summary_values;test_parity_audit_schema_order_and_e
+0 t1-ou-jump-commodity                         t=474.2s req=3 net=0 pass=14 fail=12 test_n_observations;test_mean_level_range;test_std_level_positive;test_kappa_pos
+1 t1-pca-factor-portfolio                      t=483.8s req=5 net=0 pass=8 fail=0 
+0 t1-realized-vol-estimators                   t=94.5s req=4 net=0 pass=117 fail=24 test_noise_var_est[2024-01-02];test_noise_var_est[2024-01-03];test_noise_var_est
+0 t1-prediction-markets-cross-venue-dislocatio t=430.8s req=7 net=0 pass=2 fail=23 test_results_schema;test_solution_schema;test_trade_log_schema;test_daily_equity
+0 t1-regime-cta-vol-target                     t=316.8s req=7 net=0 pass=0 fail=1 test_verification
+0 t1-regime-riskparity-cvar                    t=211.6s req=5 net=0 pass=0 fail=1 test_verification
+0 t1-sec-10k-report-long                       t=411.8s req=4 net=0 pass=1 fail=34 test_field_is_correct[DocumentType-str-flags0];test_field_is_correct[DocumentAnn
+0 t1-residual-momentum                         t=412.0s req=6 net=0 pass=5 fail=28 test_fmb_json_required_keys_no_extras;test_fmb_json_scalar_invariants;test_sprea
+0 t1-sentiment-factor-alpha                    t=215.3s req=7 net=0 pass=0 fail=1 test_verification
+0 t1-sec-8k-event-alpha                        t=314.6s req=11 net=0 pass=0 fail=1 test_verification
+1 t1-sma-crossover-spy                         t=213.1s req=4 net=0 pass=20 fail=0 
+1 t1-smith-tail-index                          t=257.3s req=6 net=0 pass=33 fail=0 
+0 t1-spread-option-kirk-margrabe               t=205.3s req=5 net=0 pass=34 fail=1 test_rho_values
+0 t1-standard-var-methods                      t=428.3s req=5 net=0 pass=33 fail=9 test_var_1day_values[EWMA-0.95-14887.91];test_var_1day_values[EWMA-0.99-21056.26
+0 t1-stable-residual                           t=456.8s req=7 net=0 pass=1 fail=18 test_summary_schema_and_types;test_summary_values_match_reference;test_monthly_c
+0 t1-stochvol-implied-surface-new              t=351.6s req=5 net=1 pass=20 fail=44 test_option_prices_shape;test_iv_surface_shape;test_strike_grid;test_maturity_gr
+0 t1-structured-note-risk                      t=379.1s req=5 net=0 pass=0 fail=1 test_verification
+0 t1-var-es-estimation                         t=285.3s req=6 net=0 pass=41 fail=6 test_normal_es_095;test_normal_es_099;test_student_t_es_095;test_student_t_es_09
+1 t1-variance-swap-replication                 t=71.9s req=3 net=0 pass=17 fail=0 
+0 t1-swap-curve-bootstrap-ois                  t=395.3s req=9 net=0 pass=2 fail=17 test_ois_curve_schema;test_libor_curve_schema;test_repriced_quotes_schema;test_o
+0 t1-yield-curve-bootstrap-immunization        t=365.7s req=4 net=0 pass=47 fail=5 test_ba_krd_5_largest_for_5y_bond;test_ba_krd_2_dominant_for_2y_bond;test_la_krd
+0 t1-yield-curve-bond-immunization             t=384.8s req=14 net=0 pass=2 fail=39 test_pinned_zero_rates[zero_curve_t0.csv-0.25-0.053935];test_pinned_zero_rates[z
+1 t1-zero-coupon-bootstrapping                 t=319.0s req=9 net=1 pass=6 fail=0 
+0 t1-yield-curve-pca-dynamics                  t=339.6s req=15 net=0 pass=0 fail=33 test_spread_2s10s_mean;test_spread_2s10s_std;test_spread_2s10s_max_date;test_spr
+network reruns: ['t1-stochvol-implied-surface-new']
+0 t1-stochvol-implied-surface-new              t=412.6s req=3 net=0 pass=4 fail=60 test_option_prices_csv_exists;test_iv_surface_csv_exists;test_iv_surface_png_exi
+PASS@1 = 17/86 = 0.198   mean agent time 313s

@@ -1,0 +1,32 @@
+model=configured units=21 run=F:\#Project\Agenthon_T1_CodingTask\track1-agent\benchmarks\runs\set-v10
+resume: 0 unit(s) already graded
+0 t1-credit-portfolio-var-cvar                 t=562.5s req=4 net=1 pass=72 fail=58 test_shape;test_copula_labels;test_confidence_levels_present;test_t_copula_heavi
+0 t1-crypto-funding-rate-basis-carry           t=581.5s req=4 net=1 pass=13 fail=50 test_symbol_and_obs;test_date_range;test_descriptive_stat[mean-5.493e-05-1e-06];
+0 t1-first-passage-time                        t=359.9s req=6 net=0 pass=17 fail=14 test_prob_decreases_with_barrier;test_prob_increases_with_T;test_mc_reasonably_c
+0 t1-barone-adesi-whaley                       t=561.7s req=11 net=0 pass=23 fail=13 test_atm_put_T1;test_S_star_call_above_S0;test_S_star_call_increases_with_T;test
+0 t1-mtm-xccy-basis-desk                       t=607.2s req=4 net=1 pass=16 fail=129 test_results_deliverable_matches_reference[trade_pv_usd];test_results_deliverabl
+0 t1-13f-amendment-aware-crowding              t=622.7s req=4 net=2 pass=4 fail=47 test_reference_match_resolution_and_holdings_outputs;test_reference_match_manage
+0 t1-prediction-markets-cross-venue-dislocatio t=548.4s req=4 net=2 pass=2 fail=23 test_results_schema;test_solution_schema;test_trade_log_schema;test_daily_equity
+1 t1-EXAMPLE-bs-greeks-pde                     t=388.1s req=5 net=1 pass=14 fail=0 
+0 t1-credit-migration-matrix                   t=227.1s req=9 net=0 pass=105 fail=2 test_total_transitions_matches_cohort_sizes;test_speculative_grade_pd_consistent
+1 t1-spread-option-kirk-margrabe               t=236.7s req=6 net=0 pass=35 fail=0 
+1 t1-cme-hdd-option-pricing                    t=338.5s req=6 net=0 pass=52 fail=0 
+0 t1-dupire-local-vol                          t=512.0s req=11 net=0 pass=12 fail=56 test_calibration_s0_positive;test_calibration_s0_reasonable;test_calibration_s0_
+0 t1-fama-french-factor-model-new              t=461.4s req=9 net=0 pass=8 fail=93 test_results_has_meta;test_results_has_stocks;test_results_has_alpha_ranking;tes
+0 t1-yield-curve-bootstrap-immunization        t=523.8s req=8 net=0 pass=46 fail=6 test_ip_keys;test_ip_krd2_match;test_ip_krd5_match;test_ip_allocations_nonnegati
+0 t1-cliquet-ratchet-pricing                   t=426.2s req=5 net=0 pass=15 fail=2 test_cliquet_prices_values;test_summary_values
+0 t1-geometric-mean-reverting-jd               t=460.4s req=5 net=0 pass=31 fail=3 test_variance_bounded_by_stationary;test_mc_var_close_to_analytical;test_mc_accu
+0 t1-cta-basel-capital                         t=561.9s req=6 net=1 pass=0 fail=1 test_verification
+0 t1-alpha-hedge-strategy                      t=546.7s req=5 net=0 pass=0 fail=1 test_verification
+1 t1-sma-crossover-spy                         t=583.8s req=6 net=0 pass=20 fail=0 
+1 t1-zero-coupon-bootstrapping                 t=416.6s req=3 net=8 pass=6 fail=0 
+0 t1-cir-bond-pricing                          t=567.1s req=2 net=41 pass=12 fail=23 test_n_obs_in_range;test_kappa_in_bounds;test_theta_in_bounds;test_sigma_in_boun
+network reruns: ['t1-crypto-funding-rate-basis-carry', 't1-credit-portfolio-var-cvar', 't1-mtm-xccy-basis-desk', 't1-13f-amendment-aware-crowding', 't1-prediction-markets-cross-venue-dislocation', 't1-cta-basel-capital', 't1-cir-bond-pricing']
+0 t1-crypto-funding-rate-basis-carry           t=555.5s req=3 net=4 pass=13 fail=50 test_symbol_and_obs;test_date_range;test_descriptive_stat[mean-5.493e-05-1e-06];
+0 t1-credit-portfolio-var-cvar                 t=573.1s req=4 net=3 pass=72 fail=58 test_shape;test_copula_labels;test_confidence_levels_present;test_t_copula_heavi
+0 t1-13f-amendment-aware-crowding              t=546.6s req=3 net=0 pass=4 fail=47 test_reference_match_resolution_and_holdings_outputs;test_reference_match_manage
+0 t1-mtm-xccy-basis-desk                       t=591.7s req=4 net=0 pass=16 fail=129 test_results_deliverable_matches_reference[trade_pv_usd];test_results_deliverabl
+0 t1-prediction-markets-cross-venue-dislocatio t=588.6s req=4 net=15 pass=2 fail=23 test_results_schema;test_solution_schema;test_trade_log_schema;test_daily_equity
+0 t1-cta-basel-capital                         t=562.9s req=3 net=14 pass=0 fail=1 test_verification
+1 t1-cir-bond-pricing                          t=370.1s req=5 net=4 pass=35 fail=0 
+PASS@1 = 6/21 = 0.286   mean agent time 468s

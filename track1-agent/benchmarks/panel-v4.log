@@ -1,0 +1,18 @@
+model=configured units=16 run=F:\#Project\Agenthon_T1_CodingTask\track1-agent\benchmarks\runs\panel-v4
+1 t1-historical-var-data-prep                  t=195.4s req=5 pass=12 fail=0 
+1 t1-sma-crossover-spy                         t=250.0s req=4 pass=20 fail=0 
+1 t1-earnings-surprise-calculator              t=84.3s req=3 pass=8 fail=0 
+0 t1-fx-forward-cross-rate                     t=396.5s req=7 pass=33 fail=4 test_portfolio_mtm_pnl[T002-23037.54];test_portfolio_mtm_pnl[T004-34153.01];test_pnl_spot_
+0 t1-var-es-estimation                         t=463.4s req=8 pass=10 fail=37 test_has_all_alphas;test_normal_var_095;test_normal_var_099;test_normal_es_095;test_normal
+0 t1-implied-vol-approximations                t=696.5s req=16 pass=9 fail=1 test_summary_json_oracle_values
+0 t1-alpha-hedge-strategy                      t=263.9s req=5 pass=0 fail=1 test_verification
+0 t1-fft-compound-poisson                      t=663.2s req=7 pass=55 fail=8 test_fft_var[lognormal-0.95];test_fft_var[lognormal-0.99];test_fft_var[lognormal-0.995];te
+0 t1-regime-riskparity-cvar                    t=746.5s req=9 pass=0 fail=1 test_verification
+0 t1-crypto-funding-rate-basis-carry           t=821.9s req=8 pass=52 fail=11 test_symbol_and_obs;test_ou_parameter[half_life_periods-2.251-0.3];test_ou_parameter[half_
+0 t1-swap-curve-bootstrap-ois                  t=863.6s req=12 pass=2 fail=17 test_ois_curve_schema;test_libor_curve_schema;test_repriced_quotes_schema;test_ois_pillar_
+0 t1-cross-sectional-momentum                  t=185.5s req=4 pass=31 fail=6 test_results_float_values[total_return-1.6172649012281468];test_results_float_values[annua
+0 t1-credit-migration-matrix                   t=214.4s req=4 pass=105 fail=2 test_ccc_default_1y;test_total_transitions_matches_cohort_sizes
+0 t1-hull-white-swaption                       t=794.9s req=14 pass=47 fail=34 test_rmse_below_5bps;test_caplet_diffs_below_3bps;test_analytical_price_range[1Yx5Y-100-20
+0 t1-etf-cross-asset-lead-lag                  t=544.2s req=12 pass=10 fail=14 test_dimensions_and_sample_split;test_solution_intermediates_reference_values;test_out_of_
+0 t1-EXAMPLE-bs-greeks-pde                     t=625.9s req=7 pass=9 fail=5 test_put_call_parity;test_delta_bounds[call--1e-05-1.00001];test_delta_bounds[put--1.00001
+PASS@1 = 3/16 = 0.188   mean agent time 488s

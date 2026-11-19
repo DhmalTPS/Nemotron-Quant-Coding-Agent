@@ -1,0 +1,18 @@
+model=configured units=16 run=F:\#Project\Agenthon_T1_CodingTask\track1-agent\benchmarks\runs\panel-v3
+1 t1-historical-var-data-prep                  t=350.0s req=6 pass=12 fail=0 
+1 t1-sma-crossover-spy                         t=388.5s req=4 pass=20 fail=0 
+0 t1-fx-forward-cross-rate                     t=415.8s req=4 pass=0 fail=37 test_forward_rate_mid[EUR/USD-3M-1.092616];test_forward_rate_mid[USD/JPY-3M-146.270313];te
+0 t1-earnings-surprise-calculator              t=92.6s req=3 pass=0 fail=0 
+0 t1-var-es-estimation                         t=295.6s req=4 pass=28 fail=19 test_normal_es_095;test_normal_es_099;test_student_t_es_095;test_student_t_es_099;test_row
+0 t1-fft-compound-poisson                      t=311.8s req=5 pass=52 fail=11 test_fft_var[lognormal-0.95];test_fft_var[lognormal-0.99];test_fft_var[lognormal-0.995];te
+0 t1-implied-vol-approximations                t=451.2s req=6 pass=9 fail=1 test_summary_json_oracle_values
+0 t1-alpha-hedge-strategy                      t=336.7s req=4 pass=0 fail=1 test_verification
+0 t1-regime-riskparity-cvar                    t=286.6s req=3 pass=0 fail=1 test_verification
+0 t1-crypto-funding-rate-basis-carry           t=391.4s req=4 pass=13 fail=50 test_symbol_and_obs;test_date_range;test_descriptive_stat[mean-5.493e-05-1e-06];test_descr
+0 t1-cross-sectional-momentum                  t=109.4s req=3 pass=31 fail=6 test_results_float_values[total_return-1.6172649012281468];test_results_float_values[annua
+0 t1-hull-white-swaption                       t=332.4s req=5 pass=49 fail=32 test_a_in_range;test_sigma_in_range;test_rmse_below_5bps;test_caplet_diffs_below_3bps;test
+0 t1-swap-curve-bootstrap-ois                  t=359.1s req=4 pass=2 fail=17 test_ois_curve_schema;test_libor_curve_schema;test_repriced_quotes_schema;test_ois_pillar_
+0 t1-etf-cross-asset-lead-lag                  t=296.6s req=6 pass=1 fail=23 test_dimensions_and_sample_split;test_solution_intermediates_have_expected_keys;test_solut
+0 t1-EXAMPLE-bs-greeks-pde                     t=415.6s req=5 pass=1 fail=14 test_required_columns;test_row_count_matches_input;test_option_ids_match;test_no_nulls;tes
+0 t1-credit-migration-matrix                   t=419.5s req=7 pass=12 fail=95 test_file_exists[cumulative_default_probs.csv];test_file_exists[markov_test.csv];test_file
+PASS@1 = 2/16 = 0.125   mean agent time 328s

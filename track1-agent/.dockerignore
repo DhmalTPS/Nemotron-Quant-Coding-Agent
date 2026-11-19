@@ -1,0 +1,5 @@
+*
+!agent/
+!assets/
+!LICENSE
+**/__pycache__

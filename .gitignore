@@ -1,0 +1,37 @@
+# Whitelist: ignore everything, then admit only the agent's own source, tests, tools and
+# summary benchmark logs. Organiser kits (hub/, track1-coding-public/), credentials
+# (extra_info/), submission descriptors, image tarballs and per-unit run dumps stay local.
+/*
+!/.gitignore
+!/README.md
+!/track1-agent/
+
+/track1-agent/*
+!/track1-agent/README.md
+!/track1-agent/LICENSE
+!/track1-agent/Dockerfile
+!/track1-agent/.dockerignore
+!/track1-agent/agent/
+!/track1-agent/assets/
+!/track1-agent/dev/
+!/track1-agent/scripts/
+!/track1-agent/tests/
+!/track1-agent/benchmarks/
+
+/track1-agent/benchmarks/*
+!/track1-agent/benchmarks/panel-v2.log
+!/track1-agent/benchmarks/panel-v3.log
+!/track1-agent/benchmarks/panel-v4.log
+!/track1-agent/benchmarks/panel-v5.log
+!/track1-agent/benchmarks/full-v8.log
+!/track1-agent/benchmarks/full-v9-450.log
+!/track1-agent/benchmarks/full-v9.log
+!/track1-agent/benchmarks/set-v10.log
+!/track1-agent/benchmarks/v10_set.txt
+!/track1-agent/benchmarks/unit_survey.csv
+
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+.env

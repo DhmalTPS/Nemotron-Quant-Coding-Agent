@@ -1,0 +1,5 @@
+model=configured units=16 run=F:\#Project\Agenthon_T1_CodingTask\track1-agent\benchmarks\runs\panel-v2
+0 t1-sma-crossover-spy                         t=216.7s req=4 pass=13 fail=7 test_num_trades;test_total_return;test_final_capital;test_win_rate;test_total_pnl;test_ann
+0 t1-fx-forward-cross-rate                     t=316.9s req=5 pass=12 fail=25 test_forward_rate_mid[EUR/USD-3M-1.092616];test_forward_rate_mid[USD/JPY-3M-146.270313];te
+1 t1-historical-var-data-prep                  t=215.5s req=4 pass=12 fail=0 
+0 t1-earnings-surprise-calculator              t=156.1s req=3 pass=0 fail=0 
