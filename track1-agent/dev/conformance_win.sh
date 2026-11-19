@@ -34,7 +34,7 @@ set -uo pipefail
 
 IMAGE="${1:?usage: conformance.sh <your-image> [kit-path]}"
 KIT="${2:-.}"
-WORK="$(cygpath -m "$(mktemp -d -p /f/#Project/Agenthon_T1_CodingTask/track1-agent/benchmarks)")"
+WORK="$(cygpath -m "$(mktemp -d -p "$(cd "$(dirname "$0")/../benchmarks" && pwd)")")"
 trap 'rm -rf "$WORK"' EXIT
 
 PASS=0; CRASH=0; MISSING=0; UNCHECKED=0; TOTAL=0

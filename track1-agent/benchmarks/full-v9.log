@@ -1,4 +1,4 @@
-model=configured units=86 run=F:\#Project\Agenthon_T1_CodingTask\track1-agent\benchmarks\runs\full-v9
+model=configured units=86 run=benchmarks/runs/full-v9
 resume: 0 unit(s) already graded
 0 t1-EXAMPLE-bs-greeks-pde                     t=468.2s req=5 net=0 pass=1 fail=14 test_required_columns;test_row_count_matches_input;test_option_ids_match;test_no
 0 t1-13f-amendment-aware-crowding              t=471.2s req=7 net=0 pass=6 fail=45 test_reference_match_resolution_and_holdings_outputs;test_reference_match_manage
@@ -6,7 +6,7 @@ resume: 0 unit(s) already graded
 0 t1-american-option-fd-new                    t=411.8s req=2 net=0 pass=20 fail=34 test_exercise_boundary_png_exists;test_all_positive;test_european_put_range;test
 1 t1-asian-option-levy-curran                  t=317.9s req=6 net=0 pass=25 fail=0 
 0 t1-barone-adesi-whaley                       t=480.0s req=5 net=0 pass=20 fail=16 test_prices_nonneg;test_american_geq_european;test_premium_nonneg;test_put_premi
-model=configured units=86 run=F:\#Project\Agenthon_T1_CodingTask\track1-agent\benchmarks\runs\full-v9
+model=configured units=86 run=benchmarks/runs/full-v9
 resume: 6 unit(s) already graded
 0 t1-barrier-garch-var                         t=267.8s req=6 net=0 pass=0 fail=1 test_verification
 0 t1-binance-btc-participation-tca             t=325.7s req=9 net=0 pass=4 fail=1 test_fills_csv_schema_row_ordering_precision_and_event_links

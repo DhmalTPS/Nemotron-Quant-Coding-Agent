@@ -1,4 +1,4 @@
-model=configured units=16 run=F:\#Project\Agenthon_T1_CodingTask\track1-agent\benchmarks\runs\panel-v4
+model=configured units=16 run=benchmarks/runs/panel-v4
 1 t1-historical-var-data-prep                  t=195.4s req=5 pass=12 fail=0 
 1 t1-sma-crossover-spy                         t=250.0s req=4 pass=20 fail=0 
 1 t1-earnings-surprise-calculator              t=84.3s req=3 pass=8 fail=0 

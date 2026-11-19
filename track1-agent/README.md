@@ -12,9 +12,9 @@ House model at run time: `solve --task-dir /input --out /app/output`.
 | Graders mostly pin oracle numbers (1e-6 tolerances common), exact key sets / column order, JSON bool/int types, exact RNG streams | plan has a mandatory "traps and decisions" ledger; validator flags missing/extra keys, wrong types, row counts; reviewer audits literal compliance |
 | 40/86 instructions name inputs at their unit-image path (`/app/x.csv`); evaluation mounts the unit at `/input` | path map rebuilt from `environment/Dockerfile` COPY lines; string literals in generated code are rewritten |
 | `checks/` is sealed on the platform | agent never depends on it; benchmark hides it by default |
-| Canary GUIDs in instruction/checks; any canary in output fails g2 | canary lines scrubbed from prompts; output tree scanned and scrubbed |
+| Canary GUIDs in instruction/checks; any canary in output fails the organisers' output gate (g2) | canary lines scrubbed from prompts; output tree scanned and scrubbed |
 | Read-only root FS, uid 65534, 64 MiB noexec `/tmp`, 256 PIDs, no HOME | HOME/caches in /tmp, thread caps, scripts interpreted (not exec'd) from /tmp |
-| 12 h stage clock for ~86 units (~8 min each) is the binding limit | per-unit budget `min(card - 90 s, 450 s)`, best attempt always promoted to the output |
+| 12 h stage clock for ~86 units (~8 min each) is the binding limit | per-unit budget `min(card - 90 s, 560 s)` (full-v9 ran at 450 s), best attempt always promoted to the output |
 | Output tree limits (<=256 files, <=64 MiB, no links, valid names) | attempts run in a stage dir; only the best attempt's files are promoted; final sanitizer |
 
 ## Pipeline
@@ -36,7 +36,7 @@ ingest (instruction, card, inventory, path map, canaries)
 * Rule 1/network: only `$MODEL_ENDPOINT/v1/chat/completions` with `$MODEL_TOKEN`; proxies read from
   env; no vendor tools; generated code may not use the network (static check, credentials removed
   from its environment).
-* Rule 8: the casebook (`assets/casebook`) holds only our agent's own passing solutions; retrieval
+* Rule 8: the casebook (`assets/casebook`) holds only the agent's own passing solutions; retrieval
   excludes the target unit by id AND by instruction similarity (content match), so a unit can never
   receive its own solution.
 * Rule 9: every solution is written by the House model during the run; there is no stored answer.
@@ -56,12 +56,12 @@ python dev/bench.py --image t1-agent:dev --units all --jobs 2     # full public 
 # offline tools
 python dev/eval_contract.py ../track1-coding-public/units          # deliverable extraction accuracy
 python dev/eval_profile.py  ../track1-coding-public/units          # profiler speed / prompt size / canary leak
-python dev/build_casebook.py benchmarks/runs/<tag>                 # rule-8 casebook from passing runs
+python dev/build_casebook.py benchmarks/runs/<tag>                 # rule-8 casebook from passing runs (run dir created by dev/bench.py)
 
 # submission (keys are read by path from ../extra_info/keys, never printed)
 python scripts/package_submission.py --registry docker.io --repository <user>/agenthon-t1 --digest sha256:<...>
 ```
 
-Environment knobs (all optional): `AGENT_MAX_SECONDS` (450), `AGENT_REQUEST_CAP` (16),
+Environment knobs (all optional): `AGENT_MAX_SECONDS` (560), `AGENT_REQUEST_CAP` (16),
 `AGENT_EXEC_TIMEOUT` (300), `AGENT_MAX_REPAIRS` (6), `AGENT_REVIEW_PASSES` (1),
 `AGENT_USE_CHECKS` (1), `AGENT_USE_CASEBOOK` (1), `AGENT_DEBUG_DIR` (unset).

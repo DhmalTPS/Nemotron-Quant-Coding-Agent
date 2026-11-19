@@ -1,4 +1,4 @@
-model=configured units=16 run=F:\#Project\Agenthon_T1_CodingTask\track1-agent\benchmarks\runs\panel-v3
+model=configured units=16 run=benchmarks/runs/panel-v3
 1 t1-historical-var-data-prep                  t=350.0s req=6 pass=12 fail=0 
 1 t1-sma-crossover-spy                         t=388.5s req=4 pass=20 fail=0 
 0 t1-fx-forward-cross-rate                     t=415.8s req=4 pass=0 fail=37 test_forward_rate_mid[EUR/USD-3M-1.092616];test_forward_rate_mid[USD/JPY-3M-146.270313];te

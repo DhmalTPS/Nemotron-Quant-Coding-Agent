@@ -6,10 +6,11 @@ budget and a read-only sandbox.
 
 ## Context
 
-- Event: Agenthon 2026, Track 1 ("Coding"). Development ran 2 to 9 October 2026; the Development
-  phase closed on 12 October 2026.
-- Built solo. Only Development-phase submissions were made. No official score or rank is reported
-  here.
+- Event: Agenthon 2026, Track 1 ("Coding"). I built the agent from 2 to 9 October 2026; the
+  competition's Development phase closed on 12 October 2026.
+- Built solo. Only Development-phase submissions were made. Two Development-phase platform runs
+  scored 18/86 (v6) and 16/86 (v7), as noted in `track1-agent/agent/config.py`; no final-phase
+  score or rank exists.
 - Organiser material is not included in this repository. See the
   [Track 1 public kit](https://github.com/Agenthon-2026/track1-coding-public) (86 public units,
   checkers, sandbox image) and the
@@ -62,8 +63,11 @@ Design points:
 
 ## Results
 
-All results are local pass@1 on the public units, with checkers hidden from the agent. They are
-not official leaderboard scores.
+All results in the table are local pass@1 on the public units, with checkers hidden from the
+agent. They are not official leaderboard scores. On the platform itself, two Development-phase
+submissions scored 18/86 = 0.209 (v6, 450 s per-unit cap) and 16/86 = 0.186 (v7, 400 s cap); these
+figures are recorded in a comment in `track1-agent/agent/config.py`, and the platform logs are not
+committed.
 
 | Run | Units | pass@1 | Mean agent time | Log |
 |---|---|---|---|---|
@@ -75,16 +79,19 @@ not official leaderboard scores.
 
 How to read these numbers:
 
-- The full-roster figure, **0.198**, is the representative one. The 16-unit panel was used for
+- The full-roster local figure, **0.198**, is the representative one and sits between the two
+  Development-phase platform scores (0.186 and 0.209). The 16-unit panel was used for
   development, so its 0.312 is optimistic.
 - full-v9 ran before the casebook existed. The casebook was then built from v9's passing
   solutions, so set-v10 is not a clean held-out measurement.
-- Passes cluster in well-specified textbook tasks: backtests 3/3, tool-using data tasks 2/2,
-  derivatives pricing 3/15. Cross-domain units scored 0/19. These counts come from joining
+- Passes cluster in well-specified textbook tasks (backtests 3/3, tool-using data tasks 2/2);
+  derivatives pricing was at the roster average (3/15) and cross-domain units scored 0/19. These counts come from joining
   `full-v9.log` with `unit_survey.csv`.
 - Most failures are partial, not crashes. A typical failed unit passes many checks but misses a
   few oracle values or an exact schema detail, and pass@1 gives no credit for that.
 - `panel-v2`, `full-v8` and `full-v9-450` are aborted or partial runs, kept for completeness.
+  full-v9 was resumed once after 6 units, and one unit was re-run after a network error (it failed
+  both times).
 
 ## Repository layout
 

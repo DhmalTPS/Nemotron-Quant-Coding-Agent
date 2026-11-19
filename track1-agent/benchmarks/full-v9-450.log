@@ -1,4 +1,4 @@
-model=configured units=86 run=F:\#Project\Agenthon_T1_CodingTask\track1-agent\benchmarks\runs\full-v9-450
+model=configured units=86 run=benchmarks/runs/full-v9-450
 0 t1-EXAMPLE-bs-greeks-pde                     t=367.0s req=2 net=0 pass=6 fail=8 test_no_nulls;test_put_call_parity;test_delta_bounds[call--1e-05-1.00001];test_d
 0 t1-13f-amendment-aware-crowding              t=452.3s req=4 net=0 pass=4 fail=47 test_reference_match_resolution_and_holdings_outputs;test_reference_match_manage
 0 t1-alpha-hedge-strategy                      t=269.1s req=4 net=0 pass=0 fail=1 test_verification

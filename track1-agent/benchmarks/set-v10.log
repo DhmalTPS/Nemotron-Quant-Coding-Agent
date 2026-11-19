@@ -1,4 +1,4 @@
-model=configured units=21 run=F:\#Project\Agenthon_T1_CodingTask\track1-agent\benchmarks\runs\set-v10
+model=configured units=21 run=benchmarks/runs/set-v10
 resume: 0 unit(s) already graded
 0 t1-credit-portfolio-var-cvar                 t=562.5s req=4 net=1 pass=72 fail=58 test_shape;test_copula_labels;test_confidence_levels_present;test_t_copula_heavi
 0 t1-crypto-funding-rate-basis-carry           t=581.5s req=4 net=1 pass=13 fail=50 test_symbol_and_obs;test_date_range;test_descriptive_stat[mean-5.493e-05-1e-06];
